@@ -1,0 +1,253 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-size: 18px;
+    font-family : 'Poppins', sans-serif ;
+
+}
+body{
+    background-color: #222222;
+    color:#ffffff;
+    height:100vh;
+    padding: 50px;
+    background: linear-gradient(45deg,#DFF2FF,#b4c8dd) center center no-repeat;
+    line-height: 1.4;
+}
+
+.navigation{
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, .3);
+    background: linear-gradient(45deg,#DFF2FF,#1055eb) center center no-repeat;
+   
+}
+.logo-lien{
+    margin-right: auto;
+}
+.logo-image{
+    width: 150px;
+    height: auto;
+}
+.nav-lien:link,
+.nav-lien:visited{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    color: #222222;
+    font-weight: 100;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    transition: all .2s;
+}
+.nav-lien:not(:last-child){
+    border-right: 1px solid #FC833C;
+}
+.nav-lien:hover{
+    background-color: #e4dcdc;
+    color:#222222;
+}
+main{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and(max-width:1100px) {
+    .nav-lien:link,
+.nav-lien:visited{
+    font-size: 16px;
+    padding: 30px;
+               }
+
+               .navigation{
+                padding: 30px 50px;
+            }
+    .logo-image{
+        width: 150px;
+    }  
+    
+}
+@media only screen and (max-width:800px) {
+  
+
+               .navigation{
+               flex-direction: column;
+            }
+    .logo-image{
+        margin-right: 0;
+    }  
+    
+}
+@media only screen and(max-width:650px) {
+    .nav-lien:link,
+.nav-lien:visited{
+    display: block;
+               }
+
+               .nav-lien:not(:last-child){
+                border-right: none;
+                border-bottom: 1px solid #dd8e0ff1;
+            }
+        
+
+}
+
+div> img{
+    width: 300px;
+    height: 350px;
+    margin-right: 25px;
+
+}
+div .profils{
+    width:300px;
+    height:auto;
+    margin: 30px;
+}
+div.textP{
+    width:600px;
+    height:auto;
+}
+.cont1{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+}
+.slide img{
+    max-width:100% ;
+    display: none;
+    
+}
+img.active{
+    display: block;
+    animation: fade 0.8s;
+    width: 100%;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+.cont-btn{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(231, 225, 225);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+}
+.btn-nav{
+    font-size: 25px;
+    margin: 7px 15px;
+    cursor: pointer;
+
+}
+h3.title{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    color: #ffffff;
+}
+em{
+    font-weight: bolder;
+
+}
+p.discover{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 25px;
+    word-spacing: 3px;
+}
+/* footer{
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
+
+footer .container .row {
+    
+    color: #FFFFFF;
+}
+footer .row div{
+    margin-bottom: 100px;
+    text-align: center;
+    padding-top: 0;
+    background: linear-gradient(45deg,#DFF2FF,#1055eb) center center no-repeat;
+    font-family: 'Tangerine', serif;
+    font-size: 25px;
+    font-weight: bolder;
+    bottom: 0;
+    width: 100%;
+
+}
+label{
+    margin-right:10px;
+    font-size: 15px;
+    margin-bottom: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+textarea{
+    margin-left: 80px;
+    margin-bottom: 15px;
+}
+#formulaire{
+    display: flex;
+    margin-top: 25px;
+    text-align: center;
+    flex-direction: column;
+}
+div#yourComment{
+    text-align: left;
+    font-size: 7px;
+    line-height: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+p.lead{
+    font-family:'Tangerine', serif;
+    font-size: 45px;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
